@@ -1,0 +1,1 @@
+This is a game about folowing a recipe. Currently it requires the player to follow the directions perfectly. I am working on making the program more able to respond to a variety of user responses while still working properly.
