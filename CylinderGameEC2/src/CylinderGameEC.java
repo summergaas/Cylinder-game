@@ -168,6 +168,9 @@ public class CylinderGameEC {
                             else if ("bakingpowder".equals(ingredient)) {
                                 ingredientC = bakingPowderC;
                             }
+							else if ("Bakingpowder".equals(ingredient)){
+								ingredientC = bakingPowderC;
+							}
                             else {
                                 System.out.println("We don't have that ingredient! You've lost the game."); //would like to let the player have another chance, but was suprised how complicated that ended up being given the code I have developed so far
                             }
