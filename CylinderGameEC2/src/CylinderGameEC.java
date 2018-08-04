@@ -123,25 +123,12 @@ public class CylinderGameEC {
                         
                         Cylinder ingredientC = flourC;
                         Cylinder utensilC = quarterCupC;
-                        
-			System.out.println("Hello! We are going to bake a cake. Your materials are:");
-			System.out.println("flour, sugar, milk, cocoa, eggs, butter, baking soda, and baking powder");
-                        System.out.println("Use your measuring utensils: 1/4cup, 1/2cup, cup, and teaspoon to move ingredients to the mixing bowl.");
-                        System.out.println("When all of your ingredients have been added to the mixing bowl, they should fit perfectly in the cake pan.");
-                        System.out.println("Add these ingredients to your mixing bowl:");
-			System.out.println("2.0 cups flour");
-			System.out.println("1.5 cups milk");
-			System.out.println("1.25 cups sugar");
-			System.out.println("0.75 cups cocoa");
-			System.out.println("0.75 cups butter");
-			System.out.println("0.25 cups eggs");
-			System.out.println("1 tsp. bakingsoda");
-			System.out.println("1 tsp. bakingpowder");
-                        
+                                                
                         Scanner user_input = new Scanner ( System.in );
                         String ingredient;
-                        System.out.println("Enter an ingredient (don't use spaces) or, enter 'pan' if you are finished adding ingredients and are ready to pour everything into the pan.");
                         ingredient = user_input.next();
+                        
+                        
                         
                         while (!"pan".equals(ingredient)){
                             if ("flour".equals(ingredient)){
