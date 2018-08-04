@@ -165,6 +165,9 @@ public class CylinderGameEC {
                             else if ("bakingsoda".equals(ingredient)) {
                                 ingredientC = bakingSodaC;
                             }
+                            else if ("Bakingsoda".equals(ingredient)){
+                                ingredientC = bakingSodaC;
+                            }
                             else if ("bakingpowder".equals(ingredient)) {
                                 ingredientC = bakingPowderC;
                             }
