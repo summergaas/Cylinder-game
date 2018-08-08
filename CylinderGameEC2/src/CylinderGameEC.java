@@ -10,7 +10,8 @@
  */
 
 import java.util.Scanner; //From Google search, found many sites saying Scanner was a good way to accept user input. Followed examples on http://www.homeandlearn.co.uk/java/user_input.html while working on this project.
-import my.cylinder; 
+import my.cylinder.CylinderUI; 
+import my.cylinder.MeasurementsGUI;
 
 public class CylinderGameEC {
     
@@ -155,18 +156,11 @@ public class CylinderGameEC {
                             else if ("bakingsoda".equals(ingredient)) {
                                 ingredientC = bakingSodaC;
                             }
-                            else if ("Bakingsoda".equals(ingredient)){
-                                ingredientC = bakingSodaC;
-                            }
                             else if ("bakingpowder".equals(ingredient)) {
                                 ingredientC = bakingPowderC;
                             }
-							else if ("Bakingpowder".equals(ingredient)){
-								ingredientC = bakingPowderC;
-							}
-                            else {
-                                System.out.println("We don't have that ingredient! You've lost the game."); //would like to let the player have another chance, but was suprised how complicated that ended up being given the code I have developed so far
-                            }
+			 
+                            
                             String utensil;
                             System.out.println("Choose a measuring utensil (1/4cup, 1/2cup, cup, teaspoon):");
                             utensil = user_input.next();
