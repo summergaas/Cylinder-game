@@ -23,7 +23,7 @@ public class CylinderGameEC {
     	cylinders = new Cylinder[maxSize]; //sets the length of the array 
        	count = 0; 
         openingGUI = new CylinderUI();
-    } 
+   } 
     
     // add a new cylinder of the given radius and height to the array
     // 
@@ -150,39 +150,19 @@ public class CylinderGameEC {
                             else if ("butter".equals(ingredient)){
                                 ingredientC = butterC;
                             }
-                            else if ("eggs".equals(ingredient)){
-                                ingredientC = eggsC;
-                            }
                             else if ("bakingsoda".equals(ingredient)) {
                                 ingredientC = bakingSodaC;
                             }
                             else if ("bakingpowder".equals(ingredient)) {
                                 ingredientC = bakingPowderC;
                             }
+                            else if ("eggs".equals(ingredient)){
+                                ingredientC = eggsC;
+                            }
 			 
                             
-                            String utensil;
-                            System.out.println("Choose a measuring utensil (1/4cup, 1/2cup, cup, teaspoon):");
-                            utensil = user_input.next();
-                            if ("1/4cup".equals(utensil)){
-                               utensilC = quarterCupC;
-                            }
-                            else if ("1/2cup".equals(utensil)){
-                                utensilC = halfCupC;
-                            }
-                            else if ("cup".equals(utensil)){
-                                utensilC = cupC;
-                            }
-                            else if ("teaspoon".equals(utensil)){
-                                utensilC = teaspoonC;
-                            }
-                            else {
-                                System.out.println("We don't have the measuring tool! You've lost the game.");
-                            }
                             utensilC.pourWaterFrom(ingredientC);
                             mixingBowl.pourWaterFrom(utensilC);
-                        
-                            System.out.println("Enter an ingredient or, enter 'pan' if you are finished adding ingredients and are ready to pour everything into the pan.");
                             ingredient = user_input.next();
                         
                         }
