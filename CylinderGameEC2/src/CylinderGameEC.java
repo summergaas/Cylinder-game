@@ -100,7 +100,6 @@ public class CylinderGameEC {
 	}
 
 	public static void main(String[] args) {
-            
                         
 			Cylinder quarterCupC = new Cylinder(1, 0.25);
                         Cylinder halfCupC = new Cylinder (1, 0.5);
