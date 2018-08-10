@@ -1,1 +1,1 @@
-This is a game about following a recipe. Currently it requires the player to follow the directions perfectly. I am working on making the program more user friendly.
+This branch ended up being my first attempt at adding GUIs.  Abandoning work on this branch. Keeping alive for reference.
