@@ -10,15 +10,20 @@
  */
 
 import java.util.Scanner; //From Google search, found many sites saying Scanner was a good way to accept user input. Followed examples on http://www.homeandlearn.co.uk/java/user_input.html while working on this project.
+import my.cylinderUIs.OpeningUI;
+import my.cylinderUIs.MeasurementUIs;
+
 
 public class CylinderGameEC {
     
     private Cylinder[] cylinders;
     private int count; //number of cylinders saved in the array
+    private OpeningUI openingUI;
     
     public CylinderGameEC( int maxSize ){
     	cylinders = new Cylinder[maxSize]; //sets the length of the array 
        	count = 0; 
+        openingUI = new OpeningUI();
     } 
     
     // add a new cylinder of the given radius and height to the array
